@@ -29,7 +29,7 @@ app.get('/Registrera', (req, res) => res.render(staticDir + "html\\Registrera.ej
 app.get('/Spel', (req, res) => res.render(staticDir + "html\\Spel.ejs"));
 
 app.get("/users", async (req, res) => {
-    const users = await UserModel.getUser();
+    const users = await UserModel.getAllUser();
     res.render("DataInfo.ejs", {users: users });
 })
 

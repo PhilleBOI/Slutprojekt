@@ -19,3 +19,7 @@ exports.saveUser = function (inMail, inPassword) {
 exports.getUser = async function (uEmail) {
     return await User.findOne({ email: uEmail });
 };
+
+exports.getAllUser = async function () {
+    return await User.find({});
+};
