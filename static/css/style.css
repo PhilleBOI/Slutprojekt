@@ -1,0 +1,91 @@
+.Logo{
+    margin-right: 20px;
+}
+
+.navbar-brand {
+    color: #444;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #000;
+}
+
+.navbar-brand::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+}
+
+.navbar-brand:hover::before {
+    width: 88px;
+}
+
+
+.nav-link {
+    color: #444;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-link::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+}
+
+.home:hover::before {
+    width: 43px;
+}
+
+.game:hover::before {
+    width: 30px;
+}
+
+.music:hover::before {
+    width: 43px;
+}
+
+.contact:hover::before {
+    width: 63px;
+}
+
+.Login{
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.rounded{
+    border-radius: .90rem!important;
+    float: left;
+    margin-right: 10%;
+}
+
+.container-sm{
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: #F8F9F9;
+}
+

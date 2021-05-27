@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>MuseVibe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+          
+              <img src="/images/creative-24-.jpg" class="Logo" alt="MuseVibe" width="8%">
+
+              <a class="navbar-brand" href="/">MuseVibe</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active home" aria-current="page" href="/">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active game" href="Spel">Spel</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active music" href="Musik">Musik</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active contact" href="Kontakta">Kontakta</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex">
+                  <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Sök</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <form action="/login" method="POST" class="login">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Lösenord</label>
+        <input type="password" class="form-control" name="password" id="exampleInputPassword1" aria-describedby="passwordHelp">
+        <div id="passwordHelp" class="form-text">Vi delar aldrig ditt lösenord med någon annan!</div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">komihåg mig</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Logga in</button>
+      <button type="submit" class="btn btn-secundary" href="Registrera">Registrera</button>
+    </form>
+
+</body>
+</html>
